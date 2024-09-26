@@ -1,0 +1,9 @@
+﻿@model List<Book>
+
+<h1>Список книг</h1>
+<ul>
+    @foreach (var book in Model)
+    {
+        <li>@book.Title (Рік: @book.Year)</li>
+    }
+</ul>
